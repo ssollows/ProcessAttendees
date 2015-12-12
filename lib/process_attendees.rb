@@ -53,7 +53,7 @@ end
 # Generates the txt for Invalid Attendees
 def generate_invalid_attendees(attendees)
     File.open("invalid_attendees.txt","w") do |f|
-        f.write(attendees.map { |o| Hash[o.each_pair.to_a] })
+        attendees.each { |element| f.puts(element['lastname']+' - '+element['firstname']+' - '+element['email']+' - '+element['phone']) }
     end
 end
 

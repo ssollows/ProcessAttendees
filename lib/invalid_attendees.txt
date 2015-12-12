@@ -1,0 +1,7 @@
+lastname - firstname - email - phone
+Wilson - Molly - molly.wilson@attendease - 613-555-0124
+Duncan - Justin - justin.duncan@attendease.com - 613-555-0119
+Morgan - Jack - @attendease.com - +1-613-555-0121
+Mackay - Zoe-Charlène - zoe.mackay.at.attendease.com - 613-555-0146
+Butler - Michelle - michelle.butler@com - (613) 555 0164
+Robert - Joey - joe.roberts@attendease.com - 613-555-0192
