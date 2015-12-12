@@ -26,6 +26,7 @@ def init
             element['first_name'] = element.delete 'firstname'
             element['last_name'] = element.delete 'lastname'
             element['phone_number'] = normalize_phone_number(element['phone']).to_s
+            element.delete 'phone'
             valid_attendees.push(element)
         else
             invalid_attendees.push(element)
