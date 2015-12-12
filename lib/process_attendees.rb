@@ -46,7 +46,7 @@ end
 # Generates the JSON for Valid Attendees
 def generate_valid_attendees(attendees)
     File.open("valid_attendees.json","w") do |f|
-           f.write(attendees.map { |o| Hash[o.each_pair.to_a] }.to_json)
+        f.write(attendees.map { |o| Hash[o.each_pair.to_a] }.to_json)
    end
 end
 
