@@ -22,8 +22,10 @@ def init
     attendees.each do |element|
         duplicate = valid_attendees.any? {|h| h['email'] == element['email']}
         if EmailValidator.valid?(element['email']) && !duplicate
-            #Normalize the phone number if the email is valid
-            element['phone'] = normalize_phone_number(element['phone']).to_s
+            #Change the key name for firstname, lastname and phone for valid attendees
+            element['first_name'] = element.delete 'firstname'
+            element['last_name'] = element.delete 'lastname'
+            element['phone_number'] = normalize_phone_number(element['phone']).to_s
             valid_attendees.push(element)
         else
             invalid_attendees.push(element)
