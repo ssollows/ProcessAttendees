@@ -6,7 +6,6 @@ require 'phone'
 require 'yaml'
 require 'json'
 include ActionView::Helpers::NumberHelper
-include Enumerable
 
 def init
     # Set the deafult country code (required by the Phone gem)
