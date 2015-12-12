@@ -39,7 +39,8 @@ end
 # Using Phone to normalize the phone number
 def normalize_phone_number(num)
     number = Phoner::Phone.parse(num)
-    number = number.format('(%a) %f-%l')
+    # Formats as (area code) XXX XXXX
+    number = number.format('(%a) %f %l')
 end
 
 # Generates the JSON for Valid Attendees
