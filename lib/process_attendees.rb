@@ -25,6 +25,7 @@ def init
             #Change the key name for firstname, lastname and phone for valid attendees
             element['first_name'] = element.delete 'firstname'
             element['last_name'] = element.delete 'lastname'
+            element['email'] = element.delete 'email'
             element['phone_number'] = normalize_phone_number(element['phone']).to_s
             element.delete 'phone'
             valid_attendees.push(element)
